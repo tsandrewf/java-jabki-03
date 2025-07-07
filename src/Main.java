@@ -104,7 +104,7 @@ public class Main {
 
     // 3. Функция findMax принимает массив целых чисел и возвращает его максимальный элемент
     public static int findMax(int[] intArray) throws Exception {
-        if(0 == intArray.length) {
+        if (0 == intArray.length) {
             throw new Exception("У пустого массива нет максимального значения");
         }
 
@@ -120,13 +120,13 @@ public class Main {
 
     // 4. Функция, вычисляющая факториал числа с помощью цикла for
     public static int factorial(int x) throws Exception {
-        if(0 > x) {
+        if (0 > x) {
             throw new Exception("Факториал отрицательного числа не существует");
         }
 
         int retVal = 1;
 
-        for(int i = 1; i <= x; i++) {
+        for (int i = 1; i <= x; i++) {
             retVal *= i;
         }
         return retVal;
@@ -135,7 +135,7 @@ public class Main {
     // 5. Перегруженные функции calculateArea
     // Для круга (принимает радиус)
     public static double calculateArea(double radius) throws Exception {
-        if(0 > radius) {
+        if (0 > radius) {
             throw new Exception("Радиус круга не может быть отрицательным");
         }
 
@@ -144,11 +144,11 @@ public class Main {
 
     // Для прямоугольника (принимает длину и ширину)
     public static double calculateArea(double length, double width) throws Exception {
-        if(0 > length) {
+        if (0 > length) {
             throw new Exception("Длина прямоугольника не может быть отрицательной");
         }
 
-        if(0 > width) {
+        if (0 > width) {
             throw new Exception("Ширина прямоугольника не может быть отрицательной");
         }
 
@@ -163,7 +163,7 @@ public class Main {
     // 7. Функция, которая принимает два числа, представляющие длины катетов,
     //    и возвращает длину гипотенузы (используется теорема Пифагора)
     public static double hypotenuse(double leg1, double leg2) throws Exception {
-        if((0 > leg1) || (0 > leg2)) {
+        if ((0 > leg1) || (0 > leg2)) {
             throw new Exception("Длина катета прямоугольника не может быть отрицательной");
         }
 
